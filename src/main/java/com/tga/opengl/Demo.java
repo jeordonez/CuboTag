@@ -279,10 +279,10 @@ public class Demo {
         }
         shaderProgram = new ShaderProgram();
         
-//      shaderProgram.createVertexShader(leerFile("vertCubo.glsl"));
-//	shaderProgram.createFragmentShader(leerFile("fragCubo.glsl"));
-        shaderProgram.createVertexShader(leerFile("E:\\Descargas\\Cubo\\revisarcubo\\src\\main\\java\\com\\tga\\opengl\\vertCubo.glsl"));
-	shaderProgram.createFragmentShader(leerFile("E:\\Descargas\\Cubo\\revisarcubo\\src\\main\\java\\com\\tga\\opengl\\fragCubo.glsl"));
+        shaderProgram.createVertexShader(leerFile("vertCubo.glsl"));
+	shaderProgram.createFragmentShader(leerFile("fragCubo.glsl"));
+//      shaderProgram.createVertexShader(leerFile("E:\\Descargas\\Cubo\\revisarcubo\\src\\main\\java\\com\\tga\\opengl\\vertCubo.glsl"));
+//	shaderProgram.createFragmentShader(leerFile("E:\\Descargas\\Cubo\\revisarcubo\\src\\main\\java\\com\\tga\\opengl\\fragCubo.glsl"));
 
 	shaderProgram.link();
         shaderProgram.createUniform("projection");
@@ -297,8 +297,8 @@ public class Demo {
         view.setTranslation(new Vector3f(0.0f, 0.0f, -4.0f));             
         model.identity();//.translate(new Vector3f(0.0f, 1.0f, 0.0f)).rotate(angle, new Vector3f(1.0f, 0.0f, 0.0f));
        
-        textureID = cargaTex("E:\\Master\\TAG\\OpenGLTemplate\\Cubo\\src\\main\\java\\com\\tga\\opengl\\metal.png", textureID);
-        //textureID = cargaTex("metal.png", textureID);
+        //textureID = cargaTex("E:\\Master\\TAG\\OpenGLTemplate\\Cubo\\src\\main\\java\\com\\tga\\opengl\\metal.png", textureID);
+        textureID = cargaTex("metal.png", textureID);
 
         loop();
 
